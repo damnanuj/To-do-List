@@ -137,8 +137,21 @@
     border-radius: 3px;
     font-weight: 600;
     height: auto;
+    line-break: anywhere;
     
 }
+
+#listbtn{
+   
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    bottom: 10px;
+    left: 124px;
+    color: #64897E;
+    box-shadow: 2px 1px 10px rgb(53, 53, 53);
+    }
 #done{
     background-color: #e0964b;
     text-decoration: line-through;
