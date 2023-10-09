@@ -6,9 +6,17 @@
 // js
 
 
-const button = document.getElementsByClassName(".btn");
+const addbtn = document.querySelector(".button");
+const inputbox = document.querySelector(".input-row");
+const hider =document.getElementById("blurBackground");
+const blurEffect =  document.getElementById("blurBackground");
 
-button.addEventListener("click", () => {
-    formContainer.classList.add("popupShow")
+addbtn.addEventListener("click", () => {
+    inputbox.classList.add("inputVisible")
+    blurEffect.style.display = "block";
 });
 
+hider.addEventListener("click", () => {
+    inputbox.classList.remove("inputVisible")
+    blurEffect.style.display = "none";
+})
