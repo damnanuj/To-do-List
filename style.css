@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -79,7 +80,7 @@ input{
     outline: none;
     border: none;
     padding: 12px 28px;
-    background-color: orange;
+    background-color: #ffb219;
     color: white;
     border-radius: 40px;
 }
@@ -116,9 +117,9 @@ input{
 .btn{
     background-color: white;
     text-decoration: none;
-    font-size: 20px;
-    padding: 14px;
-    border-radius: 50%;
+    font-size: 11px;
+    padding: 7px;
+    border-radius: 4px;
     color: #64897E;
     box-shadow: 2px 1px 10px rgb(208, 208, 208);
 }
@@ -137,7 +138,7 @@ input{
 
 
 .ListArea{
-    width: 293px;
+    width: 0px;
     height: 520px;
     background-color: #64897E;
     position: relative;
@@ -146,11 +147,15 @@ input{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
 
 }
 
 .ListArea h4{
-    width: 100%;
+    
     /* background-color: red; */
     text-align: center;
   margin-top: 8px;
