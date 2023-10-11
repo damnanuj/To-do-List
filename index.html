@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Neon&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Welcome to Todo List</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-
-        <!-- Home PAge Area-->
-        <div class="home">
-            <h4>To-Do List</h4>
-
-
-
-            <a class="btn" href="#">Let's Add</a>
-
-        </div>
-
-        <!-- List Container Area -->
-        <!-- <div class="taskContainer">
-        <div class="heading">
+      <!-- Home PAge Area-->
+      <div class="home">
+        <div>
           <h4>To-Do List</h4>
-          <p class="title">Tasks</p>
         </div>
 
-        <ol class="tasks">
-          <li>working on project</li>
-          <li>working on project</li>
-          <li id="done">working on project</li>
-          <li>working on project</li>
-          <li>working on project</li>
-          <li>working on project</li>
-          <li>working on project</li>
-          <li>working on project</li>
-          <li>working on project</li>
-        </ol>
-      </div> -->
+        <div>
+          <a class="btn" href="#">Let's Add </a>
+        </div>
+      </div>
+
+      <!-- List Container Area -->
+      <div class="taskContainer">
+        <div class="insidetask">
+          <div class="heading">
+            <h4>To-Do List</h4>
+          </div>
+          <p class="title">Tasks</p>
+          
+  
+          <ol class="tasks">
+            <li>working on project</li>
+            <li>working on project</li>
+            <li id="done">working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+            <li id="done">working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+            <li id="done">working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+            <li>working on project</li>
+          </ol>
+  
+          <div class="inputbox">
+            <input class="input" type="text" placeholder="Add your task" id="input">
+             <a href="#"class="addbtn">Add</a>
+          </div>
+        </div>
+        
+      </div>
     </div>
 
     <div id="blurBackground" class="blur-background"></div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

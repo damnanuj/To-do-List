@@ -6,19 +6,20 @@
 // js
 
 
-const addbtn = document.querySelector(".button");
+const start = document.querySelector(".btn");
+const taskContainer = document.querySelector(".taskContainer");
+
 const inputbox = document.querySelector(".input-row");
 const hider =document.getElementById("blurBackground");
-const lists = document.querySelector(".ListArea");
 const blurEffect =  document.getElementById("blurBackground");
 
 // addbtn.addEventListener("click", () => {
 //     inputbox.classList.add("inputVisible")
 //     blurEffect.style.display = "block";
 // });
-addbtn.addEventListener("click", () => {
+start.addEventListener("click", () => {
     // lists.style.display = "block";
-    lists.style.width= "293px";;
+    taskContainer.style.width= "293px";;
 });
 
 // hider.addEventListener("click", () => {
