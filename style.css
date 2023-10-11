@@ -83,7 +83,7 @@ body{
     bottom: 0;
     left: 0;
     overflow-x: hidden;
-    transition: width 0.4s linear;
+    transition: width 0.3s linear;
 }
 .insidetask{
  
@@ -92,6 +92,18 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+/* xmark */
+.fa-x{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #64897E;
 }
 
 .heading{
@@ -112,7 +124,7 @@ body{
     text-transform: uppercase;
 }
 
-.tasks{
+.listContainer{
     margin-top: 5px;
    height: 75%;
    padding-left: 10px;
@@ -121,20 +133,54 @@ body{
 
 }
 
-.tasks::-webkit-scrollbar {
+.listContainer::-webkit-scrollbar {
     width: 0;
     background: none; /* Make the track transparent */
   }
-.tasks li{
+.listContainer li{
     background-color: white;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-#done{
+
+.done{
     background-color: #e89039;
     text-decoration: line-through;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.listContainer li span{
+    position: absolute;
+    right: 0px;
+    font-size: 22px;
+    color: #64897E;
+   
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+   
+}
+
+.listContainer li span:hover{
+    background-color: #edeef0;
+    cursor: pointer;
+}
+
 
 
 .inputbox{
