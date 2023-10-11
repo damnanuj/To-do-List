@@ -21,13 +21,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0964b;
+    background-color: cadetblue;
 }
 
 
 
 .container{
-    background-color: cadetblue;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ body{
      background-color: #ffb219;
      position: relative;
      border-radius: 15px;
-     box-shadow: 2px 1px 10px rgb(72, 72, 72);
+     box-shadow: 2px 2px 20px 1px rgb(52, 52, 52);
      outline: none;
 }
 
@@ -73,7 +73,7 @@ body{
    background-color: white;
    padding: 4px 8px;
    border-radius: 3px;
-   box-shadow: 1px 1px 20px 1px white;
+   box-shadow: 1px 1px 8px white;
 
 }
 
@@ -243,6 +243,14 @@ body{
 
 
 
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100vw;
+        height: 80vh;
+    }
+
+}
 
 
 
