@@ -21,11 +21,11 @@ const blurEffect =  document.getElementById("blurBackground");
 // });
 start.addEventListener("click", () => {
     // lists.style.display = "block";
-    taskContainer.style.width= "293px";;
+    taskContainer.classList.add("liststyle");
 });
 
 hider.addEventListener("click", () => {
-    taskContainer.style.width= "0";;
+    taskContainer.classList.remove("liststyle");
 });
 
 
@@ -34,6 +34,9 @@ hider.addEventListener("click", () => {
 //    <li>working on project</li>
 //    <li id="done">working on project</li>
 // </ol>
+
+
+
 function addTask(){
     if(inputbox.value === ""){
         alert("You must write something!");
@@ -52,7 +55,12 @@ function addTask(){
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
-        e.target.classList.toggle("done");
+       if (e.target.id === 'done') {
+        e.target.id = ''; // Remove the ID
+            } 
+            else {
+                e.target.id = 'done'; // Add the ID
+            }
         saveData();
     }
     else if(e.target.tagName === "SPAN"){

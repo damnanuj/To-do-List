@@ -10,7 +10,7 @@
     font-family: 'Pacifico', cursive;
     font-family: 'Tilt Neon', cursive;
     text-decoration: none;
-    list-style: none;
+    
 }
 
 /* color code #64897E */
@@ -35,6 +35,9 @@ body{
     height: 520px;
      background-color: #ffb219;
      position: relative;
+     border-radius: 15px;
+     box-shadow: 2px 1px 10px rgb(72, 72, 72);
+     outline: none;
 }
 
 
@@ -44,9 +47,8 @@ body{
     background-image: url(imgs/background.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: 2px 1px 10px rgb(72, 72, 72);
    
-    
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,6 +86,11 @@ body{
     left: 0;
     overflow-x: hidden;
     transition: width 0.3s linear;
+    border-radius: 15px;
+}
+
+.liststyle{
+    width: 293px;
 }
 .insidetask{
  
@@ -146,19 +153,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    color: #64897E;
+
 }
 
-.done{
+#done{
     background-color: #e89039;
     text-decoration: line-through;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 6px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: black;
 }
 
 .listContainer li span{
@@ -177,8 +179,9 @@ body{
 }
 
 .listContainer li span:hover{
-    background-color: #edeef0;
+    background-color: #ffb219;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -194,7 +197,7 @@ body{
    
 }
 .input{
-    width: 293px;
+    width: 100%;
     padding-left: 20px;
     outline: none;
     border: none;
@@ -237,3 +240,46 @@ body{
     z-index: 998;
     background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as needed */
 }
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 768px) {
+
+body{
+    background-color: red;
+}
+
+.container {
+        width: 354px;
+        height: 629px;
+}
+.insidetask{
+    width: 354px;
+    height: 629px;
+}
+.listContainer{
+   height: 79%;
+}
+.insidetask{
+ 
+    width: 354px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+    
+}
+ */
+
+
+
