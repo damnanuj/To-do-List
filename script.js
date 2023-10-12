@@ -2,23 +2,12 @@
 
 
 
-
-// js
-
-
 const start = document.querySelector(".btn");
 const hider = document.querySelector(".fa-x");
-
 const taskContainer = document.querySelector(".taskContainer");
 const listContainer = document.querySelector(".listContainer");
 const inputbox = document.querySelector(".input");
 
-const blurEffect =  document.getElementById("blurBackground");
-
-// addbtn.addEventListener("click", () => {
-//     inputbox.classList.add("inputVisible")
-//     blurEffect.style.display = "block";
-// });
 start.addEventListener("click", () => {
     // lists.style.display = "block";
     taskContainer.classList.add("liststyle");
@@ -29,13 +18,11 @@ hider.addEventListener("click", () => {
 });
 
 
-// <ol class="tasksContainer">
-//    <li>working on project</li>
-//    <li>working on project</li>
-//    <li id="done">working on project</li>
-// </ol>
-
-
+        // <ol class="listContainer">
+        //     <li>working on project</li>
+        //     <li>working on project</li>
+        //     <li class="done">working on project</li>
+        // </ol>
 
 function addTask(){
     if(inputbox.value === ""){
@@ -56,10 +43,10 @@ function addTask(){
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
        if (e.target.id === 'done') {
-        e.target.id = ''; // Remove the ID
+        e.target.id = ''; // Removng the ID
             } 
             else {
-                e.target.id = 'done'; // Add the ID
+                e.target.id = 'done'; // Adding the ID
             }
         saveData();
     }
@@ -69,6 +56,8 @@ listContainer.addEventListener("click", function(e){
     }
 },false);
 
+
+// local storage
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML)
 }
