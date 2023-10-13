@@ -85,6 +85,3 @@ function showTask(){
 }
 
 showTask();
-
-
-localStorage.clear();
