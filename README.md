@@ -23,5 +23,5 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 You can see a live demo of the app here : [Demo Link](https://github.com/damnanuj)
 
 ## Credits
-- Illustration ©[damnanuj](https://github.com/damnanuj).
+- Illustration © [damnanuj](https://github.com/damnanuj)
 
