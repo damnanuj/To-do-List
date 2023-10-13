@@ -160,12 +160,11 @@ body {
     color: black;
 }
 
-.listContainer li span {
+/* .listContainer li span {
     position: absolute;
     right: 0px;
     font-size: 22px;
     color: #64897E;
-
     line-height: 40px;
     width: 40px;
     height: 40px;
@@ -173,12 +172,10 @@ body {
     border-radius: 6px;
     transition: all 0.2s ease-in-out;
 
-}
+} */
 
 .listContainer li span:hover {
-    background-color: #ffb219;
     cursor: pointer;
-    color: white;
 }
 
 .inputbox {

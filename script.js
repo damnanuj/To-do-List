@@ -48,7 +48,7 @@ const addTaskButton = document.querySelector(".addTask");
         li.innerText = inputbox.value;
         listContainer.appendChild(li);
         let span =document.createElement("span");
-        span.innerHTML = "\u00d7";  //xmark code
+        span.innerHTML = '<i class="fa-solid fa-trash"></i>';  //delete code
         li.appendChild(span);
     }
     inputbox.value = "";
@@ -66,8 +66,8 @@ listContainer.addEventListener("click", function(e){
             }
         saveData();
     }
-    else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+    else if(e.target.tagName === "I"){
+        e.target.parentElement.parentElement.remove();   //paarent of i = span, parent of span is Li
         saveData();
         showPageBasedOnTasks();
     }
@@ -87,4 +87,4 @@ function showTask(){
 showTask();
 
 
-
+localStorage.clear();
