@@ -96,15 +96,23 @@ body {
 }
 
 /* xmark */
-.fa-x {
+.fa-trash-can{
     position: absolute;
     right: 10px;
     top: 10px;
-    background-color: white;
-    padding: 3px 5px;
-    border-radius: 4px;
+    font-size: 20px;
+    color: white;
     cursor: pointer;
-    color: #64897E;
+    
+}
+/* Back icon */
+.fa-circle-chevron-left{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .heading {
@@ -118,7 +126,7 @@ body {
 
 .title {
 
-    margin-top: 10px;
+    margin-top: 18px;
     padding-left: 10px;
     color: white;
     letter-spacing: 3px;

@@ -3,12 +3,25 @@
 
 
 const start = document.querySelector(".btn");
-const hider = document.querySelector(".fa-x");
 const taskContainer = document.querySelector(".taskContainer");
 const listContainer = document.querySelector(".listContainer");
 const inputbox = document.querySelector(".input");
 const addTaskButton = document.querySelector(".addTask");
+const backPage = document.querySelector(".fa-circle-chevron-left");
+const resetList = document.querySelector(".fa-trash-can");
 
+
+
+
+// resetList.addEventListener("click", resetList);
+//     function resetList(){
+//         localStorage.clear();
+//     }
+
+resetList.addEventListener('click', function() {
+    localStorage.clear();
+    showHomePage(); // Show the home page
+  });
 
 
 // if all task removed page will return to homepage automatically
@@ -30,7 +43,7 @@ const addTaskButton = document.querySelector(".addTask");
 
 
         start.addEventListener("click", showTaskPage);
-        hider.addEventListener("click", showHomePage);
+        backPage.addEventListener("click", showHomePage);
         
         function showTaskPage() {
             taskContainer.style.width = "293px";
