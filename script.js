@@ -12,15 +12,10 @@ const resetList = document.querySelector(".fa-trash-can");
 
 
 
-
-// resetList.addEventListener("click", resetList);
-//     function resetList(){
-//         localStorage.clear();
-//     }
-
-resetList.addEventListener('click', function() {
-    localStorage.clear();
-    showHomePage(); // Show the home page
+resetList.addEventListener('click', function() {      //reset button ->
+    listContainer.innerHTML = '';                    //OL tag innerhtml empty 
+    localStorage.clear();                           //clear the localstorage 
+    showHomePage();                                //and back to homepage
   });
 
 
