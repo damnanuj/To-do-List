@@ -59,9 +59,19 @@ resetList.addEventListener('click', function() {    //reset button ->
         let li = document.createElement("li");
         li.innerText = inputbox.value;
         listContainer.appendChild(li);
+        let editRemove = document.createElement("div");
+        editRemove.classList.add("editRemove");
+       
+        let span1 =document.createElement("span");
+        span1.innerHTML = `<i class="fa-solid fa-pen-to-square edit"></i>`;  //edit code
         let span =document.createElement("span");
+        
         span.innerHTML = '<i class="fa-solid fa-trash"></i>';  //delete code
-        li.appendChild(span);
+        editRemove.appendChild(span1);
+        editRemove.appendChild(span);
+
+
+        li.appendChild(editRemove);
     }
     inputbox.value = "";
     saveData();

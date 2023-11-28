@@ -95,7 +95,7 @@ body {
     flex-direction: column;
 }
 
-/* xmark */
+/* reset button*/
 .fa-trash-can{
     position: absolute;
     right: 10px;
@@ -166,6 +166,14 @@ body {
     background-color: #e89039;
     text-decoration: line-through;
     color: black;
+}
+
+.editRemove{
+    margin-left: 10px;
+    /* background-color: red; */
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 /* .listContainer li span {
