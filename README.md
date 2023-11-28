@@ -4,7 +4,8 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 ![image](https://github.com/damnanuj/To-do-List/assets/106218844/50d72ea5-9372-4655-ad4f-95f8d3d7704e)
 
 
-![image](https://github.com/damnanuj/To-do-List/assets/106218844/f6cbf43e-ee02-408d-91e1-ec0329f19c5d)
+![image](https://github.com/damnanuj/To-do-List/assets/106218844/fabc839d-268f-44b9-b622-25295667e58b)
+
 
 
 
@@ -14,9 +15,10 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 - Add tasks to your to-do list.
 - Mark tasks as completed.
 - Remove/Delete tasks from the list.
+- Clear the all task list in one go.
 - Persistent storage using local storage.
-- Scrollable List Container
-- Eye Catching Ui
+- Scrollable List Container.
+- Eye Catching Ui.
 
 ## Demo
 
