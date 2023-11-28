@@ -63,10 +63,10 @@ resetList.addEventListener('click', function() {    //reset button ->
         editRemove.classList.add("editRemove");
        
         let span1 =document.createElement("span");
-        span1.innerHTML = `<i class="fa-solid fa-pen-to-square edit"></i>`;  //edit code
+        span1.innerHTML = `<i id="edit" class="fa-solid fa-pen-to-square edit"></i>`;  //edit code
         let span =document.createElement("span");
         
-        span.innerHTML = '<i class="fa-solid fa-trash"></i>';  //delete code
+        span.innerHTML = '<i id="delete" class="fa-solid fa-trash"></i>';  //delete code
         editRemove.appendChild(span1);
         editRemove.appendChild(span);
 
@@ -88,8 +88,9 @@ listContainer.addEventListener("click", function(e){
             }
         saveData();
     }
-    else if(e.target.tagName === "I"){
-        e.target.parentElement.parentElement.remove();   //paarent of i = span, parent of span is Li
+    else if(e.target.id === "delete"){
+        e.target.parentElement.parentElement.parentElement.remove();   
+        //parent of i = span, parent of span = (editRemove div) and its parent is  Li
         saveData();
         showPageBasedOnTasks();
     }
