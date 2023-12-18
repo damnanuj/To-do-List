@@ -94,6 +94,9 @@ listContainer.addEventListener("click", function(e){
         saveData();
         showPageBasedOnTasks();
     }
+    else if(e.target.id === "edit"){
+        console.log("Edit Button");
+    }
 },false);
 
 
