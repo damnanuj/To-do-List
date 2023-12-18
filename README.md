@@ -22,7 +22,7 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 
 ## Demo
 
-You can see a live demo of the app here : [Demo Link](https://damnanuj.github.io/To-do-List/#)
+You can see a live demo of the app here : [Demo Link](https://todoappdamnanuj.netlify.app)
 
 ## Credits
 - Illustration © [damnanuj](https://github.com/damnanuj)
