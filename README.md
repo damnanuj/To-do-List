@@ -1,6 +1,10 @@
 # To-do-List App
 A simple to-do list application built with HTML, CSS, and JavaScript.
 
+## Demo
+
+You can see a live demo of the app here : [Demo Link](https://todoappdamnanuj.netlify.app)
+
 ![image](https://github.com/damnanuj/To-do-List/assets/106218844/50d72ea5-9372-4655-ad4f-95f8d3d7704e)
 
 
@@ -20,9 +24,6 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 - Scrollable List Container.
 - Eye Catching Ui.
 
-## Demo
-
-You can see a live demo of the app here : [Demo Link](https://todoappdamnanuj.netlify.app)
 
 ## Credits
 - Illustration © [damnanuj](https://github.com/damnanuj)
